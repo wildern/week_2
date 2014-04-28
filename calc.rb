@@ -1,24 +1,19 @@
-# calc
+# write simple calculator
+# that will do basic math operations
+# and calculate factorial of a number
 
 
-def sum(x, y)
-  return x + y
+def sum
 end
 
-def difference(x, y)
-  return x - y
+def difference
 end
 
-def product(x, y)
-  return x * y
+def product
 end
 
-def quotient(x, y)
-#  if y == o
-#    return 'Division is impossible, since divisor is equal to 0'
-#  else
-#    return x / y
-#  end
+def quotient
+end
 
-  y == 0 ? "Division is impossible since divisor is equal to zero" : x / y
+def factorial
 end

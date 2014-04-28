@@ -22,4 +22,8 @@ describe "calc" do
 	it "should return error message while dividing x by zero" do
 		quotient(100, 0).should == "Division is impossible since divisor is equal to zero"
 	end
+
+	it "should return factorial of x" do
+		factorial(5).should == 120
+	end
 end
