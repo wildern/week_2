@@ -3,7 +3,7 @@
 # and calculate factorial of a number
 
 
-def sum
+def sum(left, right)
 =begin
 	(int, int) -> int
 
@@ -14,9 +14,10 @@ def sum
 	=> 3
 =end
 	# write your code here
+  return left+right
 end
 
-def difference
+def difference(left, right)
 =begin
 	(int, int) -> int
 
@@ -27,9 +28,10 @@ def difference
 	=> 3
 =end
 	# write your code here
+  return left-right
 end
 
-def product
+def product(left,right)
 =begin
 	(int, int) -> int
 
@@ -40,9 +42,10 @@ def product
 	=> 10
 =end
 	# write your code here
+  return left*right
 end
 
-def quotient
+def quotient(left,right)
 =begin
 	(int, int) -> int
 
@@ -53,9 +56,14 @@ def quotient
 	=> 3
 =end
 	# write your code here
+  if(right==0)
+    return "Division is impossible since divisor is equal to zero"
+  else
+    return left/right
+  end
 end
 
-def factorial
+def factorial(n)
 =begin
 	(int) -> int
 
@@ -66,4 +74,9 @@ def factorial
 	=> 120
 =end
 	# write your code here
+  if(n==1 or n==0)
+    return 1
+  else
+    return n*factorial(n-1)
+  end
 end
